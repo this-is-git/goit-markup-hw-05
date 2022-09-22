@@ -161,6 +161,8 @@ body {
 /* heroi */
 .heroi {
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--bg-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -435,6 +437,7 @@ body {
 }
 
 .footer__title {
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white);
@@ -494,6 +497,21 @@ body {
   margin-bottom: 50px;
 }
 
+.cases__link {
+  display: block;
+}
+
+.cases__link:hover,
+.cases__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cases__link:hover .cases__overlay,
+.cases__link:focus .cases__overlay {
+  transform: translateY(0);
+}
+
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -531,15 +549,6 @@ body {
   font-size: 18px;
   line-height: 1.55;
   color: var(--white);
-}
-
-.cases__item:hover .cases__overlay {
-  transform: translateY(0);
-}
-
-.cases__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cases__info {
